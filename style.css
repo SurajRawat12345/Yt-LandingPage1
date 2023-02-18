@@ -1,0 +1,133 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing : border-box;
+    font-size : 20px;
+    font-family: sans-serif;
+}
+.container{
+    width : 100%;
+    height : 100%;
+    background-image : url(Images/back.png);
+    background-position : center center;
+    background-repeat : no-repeat;
+}
+:root{
+    --color1 : #07b2f5;
+    --color2 : #f5f5f5;
+    --color3 : #000000;
+    --color4 : #afafaf;
+}
+/* ------------------- NavBar -------------------- */
+.navbar{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 0.5rem 1rem;
+    border-bottom : 0.125rem solid var(--color2);
+    background-color: var(--color1);
+}
+.navbar .logo{
+    display : flex;
+    align-items: center;
+}
+.navbar .logo-image{
+    width : 3rem;
+    height : 3rem;
+    border-radius : 50%;
+}
+.navbar .logo .logo-name{
+    padding-left : 0.5rem;
+    font-size : 2rem;
+    font-weight : bold;
+    color : var(--color2);
+}
+.navbar .menu{
+    display : flex; 
+}
+.navbar .menu li{
+    padding-right : 1rem;
+    list-style-type : none;
+}
+.navbar .menu li a{
+    text-decoration : none;
+    color : var(--color2);
+    font-weight : bold;
+}
+.navbar .menu li a:hover{
+    color : var(--color3);
+}
+/* ------------------- CONTENT ---------------------- */
+.content{
+    display : flex;
+}
+.content .part-one{
+    width : 60%;
+    padding : 3rem 3rem 0rem 2.5rem;
+}
+.content .part-one .content-body{
+    padding : 2rem 0rem;
+    font-size : 1.25rem;
+    font-family : cursive;
+    font-weight : bold;
+}
+.content .part-one .button-one{
+    padding : 0.5rem;
+    font-size : 1.5rem;
+    font-weight : bold;
+    cursor : pointer;
+    color : var(--color2);
+    background-color : var(--color1);
+    border : 0.25rem solid var(--color3);
+    border-radius : 10%;
+}
+.content .part-one .button-one:hover{
+    background-color : var(--color3);
+    border-color : var(--color2);
+}
+.content .part-two {
+    padding-top : 1rem;
+    overflow : hidden;
+}
+.content .image-back {
+    width : 85%;
+    animation : dance 2s linear infinite;
+}
+.content .part-two .image-backs .main-image{
+    width : 20rem;
+}
+@keyframes dance{
+    0%{
+        transform : translateX(0rem);
+    }
+    33%{
+        transform : translate(-0.3rem);
+    }
+    67%{
+        transform : translate(0.3rem);
+    }
+    100%{
+        transform : translateX(0rem);
+    }
+}
+/* --------------------- Footer -------------------- */
+.footer{
+    margin-top : 1.825rem;
+    padding : 0.25rem 0rem;
+    text-align : center;
+    background-color : var(--color1);
+    border-top : 0.125rem solid var(--color2);
+}
+.footer .copyright-line{
+    font-size : 1.5rem;
+    font-weight : bold;
+}
+.youtube-icon ,.linkedin-icon , .twitter-icon{
+    font-size : 2rem;
+    margin-left : 0.5rem;
+    background-color : var(--color1);
+    color : var(--color3);
+}
+.youtube-icon:hover ,.linkedin-icon:hover , .twitter-icon:hover{
+    color : var(--color2);
+}
